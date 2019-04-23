@@ -33,7 +33,7 @@ class Student
       WHERE name = ?
     SQL
 binding.pry
-    self.new_from_db(DB[:conn].execute(sql, name))
+    self.new_from_db(DB[:conn].execute(sql, name).flatten)
   end
 
   def save
