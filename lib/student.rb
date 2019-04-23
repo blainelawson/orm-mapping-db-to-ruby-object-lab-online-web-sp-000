@@ -72,7 +72,7 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 10
-      GROUP BY grade ASC
+      -- GROUP BY grade ASC
       LIMIT 1
     SQL
 
