@@ -4,6 +4,13 @@ class Student
   attr_accessor :id, :name, :grade
 
   def initialize(id=nil, name, grade)
+    @name = name
+    @grade = grade
+
+    if id != nil
+      @id = id
+    end
+  end
 
   def self.new_from_db(row)
     # create a new Student object given a row from the database
